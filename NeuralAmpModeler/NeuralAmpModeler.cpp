@@ -79,6 +79,14 @@ NeuralAmpModeler::NeuralAmpModeler(const InstanceInfo& info)
 : Plugin(info, MakeConfig(kNumParams, kNumPresets))
 {
   _InitToneStack();
+// Bloque de perillas Prueba 1 Thrash Edition
+    pGraphics->AttachControl(new IVKnobControl(mainBounds.GetGridItem(0, 2, 1, 7).GetCentredInside(90), kInputLevel, "INPUT"));
+    pGraphics->AttachControl(new IVKnobControl(mainBounds.GetGridItem(1, 2, 1, 7).GetCentredInside(90), kGateThreshold, "GATE"));
+    pGraphics->AttachControl(new IVKnobControl(mainBounds.GetGridItem(2, 2, 1, 7).GetCentredInside(90), kToneBass, "BASS"));
+    pGraphics->AttachControl(new IVKnobControl(mainBounds.GetGridItem(3, 2, 1, 7).GetCentredInside(90), kToneMid, "MID"));
+    pGraphics->AttachControl(new IVKnobControl(mainBounds.GetGridItem(4, 2, 1, 7).GetCentredInside(90), kToneTreble, "TREBLE"));
+    pGraphics->AttachControl(new IVKnobControl(mainBounds.GetGridItem(5, 2, 1, 7).GetCentredInside(90), kPresence, "PRESENCE"));
+    pGraphics->AttachControl(new IVKnobControl(mainBounds.GetGridItem(6, 2, 1, 7).GetCentredInside(90), kOutputLevel, "OUTPUT"));
   nam::activations::Activation::enable_fast_tanh();
   GetParam(kInputLevel)->InitGain("Input", 0.0, -20.0, 20.0, 0.1);
   GetParam(kToneBass)->InitDouble("Bass", 5.0, 0.0, 10.0, 0.1);
