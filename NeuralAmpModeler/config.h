@@ -1,5 +1,5 @@
-#define PLUG_NAME "NeuralAmpModeler"
-#define PLUG_MFR "Steven Atkinson"
+#define PLUG_NAME "prueba-1"
+#define PLUG_MFR "prueba-1"
 #define PLUG_VERSION_HEX 0x0000070d
 #define PLUG_VERSION_STR "0.7.13"
 #define PLUG_UNIQUE_ID '1YEo'
@@ -8,8 +8,8 @@
 #define PLUG_EMAIL_STR "spam@me.com"
 #define PLUG_COPYRIGHT_STR "Copyright 2022 Steven Atkinson"
 #define PLUG_CLASS_NAME NeuralAmpModeler
-#define BUNDLE_NAME "NeuralAmpModeler"
-#define BUNDLE_MFR "StevenAtkinson"
+#define BUNDLE_NAME "prueba-1"
+#define BUNDLE_MFR "prueba-1"
 #define BUNDLE_DOMAIN "com"
 
 #define SHARED_RESOURCES_SUBPATH "NeuralAmpModeler"
